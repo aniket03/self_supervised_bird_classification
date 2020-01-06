@@ -1,1 +1,6 @@
 .idea
+__pycache__/
+CUB_200_2011/
+selected_permuts.npy
+weights/
+*.pdf

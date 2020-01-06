@@ -55,9 +55,9 @@ if __name__ == '__main__':
 
     # Add the file paths from cub, inat and na together
     if args.dataset_config == 'js_d1':
-        all_file_paths = cub_train_file_paths + inat_file_paths + na_file_paths
-    else:
         all_file_paths = cub_train_file_paths
+    else:
+        all_file_paths = cub_train_file_paths + inat_file_paths + na_file_paths
 
     # Get validation files separate
     train_file_paths, val_file_paths = train_test_split(all_file_paths, test_size=0.1, shuffle=True, random_state=3)
