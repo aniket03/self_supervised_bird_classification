@@ -30,6 +30,29 @@ possibilities for an image.
 3. For fine tuning complete model on classification task:
 `python train_test_script.py --batch-size 128 --epochs 50 --lr 1e-2 --jigsaw-task-weights <jiigsaw_weights_file_path> --experiment-name e1_full --train-ssl-full-ft True`
 
+##### Results
+
+**Results on Jigsaw solving task**
+
+Dataset config used for jigsaw solver | Train Accuracy | Validation Accuracy
+--- | --- | ---
+JS_D1 | 65.82% | 55.9%
+JS_D2 | 77.71% | 71.45%
+
+
+**Results on Downstream (classification) task**
+
+Dataset config used for jigsaw solver | Layers fine tuned (in downstream task) | Train Accuracy | Validation Accuracy
+---| --- | --- | ---
+- | Full model trained from scratch | 100% | 47%
+- | Full model trained from imagenet weights | 100% |  74.17%
+JS_D1 | Block 4 and softmax | 63.57% | 19.17%
+JS_D1 | Block 3, 4 and softmax | 93.99% | 37.17%
+JS_D1 | Full model fine tuned | 99% | 37.16%
+JS_D2 | Block 4 and softmax | 96.73% | 31%
+JS_D2 | Block 3, 4 and softmax | 99.34% | 43%
+JS_D2 | Full model fine tuned | 99.55% | 42.66%
+
 ### Files Index (If otherwise reqd)
 
 1. **dataset_helpers.py**: Code for different data transforms used in model training. Plus helper methods to get image
