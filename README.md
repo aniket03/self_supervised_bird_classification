@@ -44,8 +44,8 @@ JS_D2 | 77.71% | 71.45%
 
 Dataset config used for jigsaw solver | Layers fine tuned (in downstream task) | Train Accuracy | Validation Accuracy
 ---| --- | --- | ---
-- | Full model trained from scratch | 100% | 47%
-- | Full model trained from imagenet weights | 100% |  74.17%
+NA | Full model trained from scratch | 100% | 47%
+NA | Full model trained from imagenet weights | 100% |  74.17%
 JS_D1 | Block 4 and softmax | 63.57% | 19.17%
 JS_D1 | Block 3, 4 and softmax | 93.99% | 37.17%
 JS_D1 | Full model fine tuned | 99% | 37.16%
