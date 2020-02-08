@@ -2,6 +2,9 @@
 
 The project explores self supervised learning for fine grained bird species classification, with an aim to remove the dependence on ImageNet pre-trained model weights for learning the CNN pipeline weights. We used jigsaw puzzles solving as a pre-text training task on birds images collected from multiple online datasets, and explored if weights from jigsaw based training can be extended for fine grained classification.
 
+### Why jigsaw puzzles
+Solving jigsaw puzzles can be used to teach a system that an object is made up of parts and what these parts are. Given that conventional ML and deep learning solutions relied on part based annotations for learning a reliable classifier, we believe that jigsaw puzzles solving task could hence eliminate that dependence, as it would be able to learn during pretext training how different parts are different from one another and how they relate to each other.
+
 ### Datasets
 We use [CUB200](http://www.vision.caltech.edu/visipedia/CUB-200.html), [INAT19](https://www.kaggle.com/c/inaturalist-2019-fgvc6/overview)
 birds subset and [NABirds](https://dl.allaboutbirds.org/nabirds) dataset for pre-text training or the jigsaw puzzles
