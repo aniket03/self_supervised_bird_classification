@@ -1,5 +1,7 @@
 ## Self supervised learning for fine grained classification in case of bird species identification
 
+The project explores self supervised learning for fine grained bird species classification, with an aim to remove the dependence on ImageNet pre-trained model weights for learning the CNN pipeline weights. We used jigsaw puzzles solving as a pre-text training task on birds images collected from multiple online datasets, and explored if weights from jigsaw based training can be extended for fine grained classification.
+
 ### Datasets
 We use [CUB200](http://www.vision.caltech.edu/visipedia/CUB-200.html), [INAT19](https://www.kaggle.com/c/inaturalist-2019-fgvc6/overview)
 birds subset and [NABirds](https://dl.allaboutbirds.org/nabirds) dataset for pre-text training or the jigsaw puzzles
